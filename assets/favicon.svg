@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+<title id="title">Brightform Studio icon</title>
+<defs>
+  <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#53E4F4"/>
+    <stop offset=".38" stop-color="#397DFF"/>
+    <stop offset=".72" stop-color="#7650F5"/>
+    <stop offset="1" stop-color="#C18BFF"/>
+  </linearGradient>
+  <linearGradient id="orbit" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#54DFF3"/>
+    <stop offset=".52" stop-color="#6284FF"/>
+    <stop offset="1" stop-color="#C18BFF"/>
+  </linearGradient>
+</defs>
+<rect width="512" height="512" rx="108" fill="#111827"/>
+<g transform="translate(36 42) scale(1.02)">
+  <path fill="url(#ribbon)" fill-rule="evenodd" d="
+    M112 54 H250 C344 54 397 101 397 174
+    C397 225 369 260 320 279 C385 294 421 337 421 391
+    C421 465 362 507 264 507 H78 L105 424 H254
+    C306 424 333 405 333 371 C333 338 306 320 255 320
+    H151 L177 242 H249 C290 242 312 224 312 190
+    C312 157 289 139 248 139 H133 Z"
+    transform="translate(0,-52) scale(.91)"/>
+  <path d="M58 324 C133 258 217 247 302 213 C354 192 392 158 414 113
+           C397 188 350 235 281 266 C201 302 116 326 58 382
+           C40 365 41 343 58 324 Z" fill="url(#orbit)" transform="translate(0,-18) scale(.91)"/>
+  <path d="M408 31 C418 61 427 70 458 80 C427 90 418 99 408 130
+           C398 99 389 90 358 80 C389 70 398 61 408 31 Z"
+        fill="#D8E3FF" transform="translate(-6 0) scale(.91)"/>
+</g>
+</svg>

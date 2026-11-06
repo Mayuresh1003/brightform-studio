@@ -1,0 +1,10 @@
+
+# Keep portfolio demos in their own repositories
+portfolio-demos/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/

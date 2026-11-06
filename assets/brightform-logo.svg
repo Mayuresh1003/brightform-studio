@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 440" role="img" aria-labelledby="title desc">
+<title id="title">Brightform Studio</title>
+<desc id="desc">A custom gradient ribbon B with a sweeping orbit and four-point star beside the Brightform Studio wordmark.</desc>
+<defs>
+  <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#53E4F4"/>
+    <stop offset=".38" stop-color="#397DFF"/>
+    <stop offset=".72" stop-color="#7650F5"/>
+    <stop offset="1" stop-color="#C18BFF"/>
+  </linearGradient>
+  <linearGradient id="orbit" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#54DFF3"/>
+    <stop offset=".52" stop-color="#6284FF"/>
+    <stop offset="1" stop-color="#C18BFF"/>
+  </linearGradient>
+  <linearGradient id="studio" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#A6B8FF"/>
+    <stop offset="1" stop-color="#C18BFF"/>
+  </linearGradient>
+</defs>
+
+<!-- Custom ribbon B -->
+<g>
+  <path fill="url(#ribbon)" fill-rule="evenodd" d="
+    M112 54 H250
+    C344 54 397 101 397 174
+    C397 225 369 260 320 279
+    C385 294 421 337 421 391
+    C421 465 362 507 264 507
+    H78 L105 424 H254
+    C306 424 333 405 333 371
+    C333 338 306 320 255 320
+    H151 L177 242 H249
+    C290 242 312 224 312 190
+    C312 157 289 139 248 139
+    H133 Z"
+    transform="translate(0,-52)"/>
+  <!-- Orbital sweep: deliberately crosses the B rather than sitting as a small underline -->
+  <path d="M58 324
+           C133 258 217 247 302 213
+           C354 192 392 158 414 113
+           C397 188 350 235 281 266
+           C201 302 116 326 58 382
+           C40 365 41 343 58 324 Z"
+        fill="url(#orbit)"/>
+  <!-- Four-point spark -->
+  <path d="M408 31
+           C418 61 427 70 458 80
+           C427 90 418 99 408 130
+           C398 99 389 90 358 80
+           C389 70 398 61 408 31 Z"
+        fill="#D8E3FF"/>
+</g>
+
+<path d="M500 72 V368" stroke="#A78BFA" stroke-width="2.5" opacity=".9"/>
+<text x="558" y="218" fill="#FFFFFF"
+      font-family="Arial, Helvetica, sans-serif" font-size="112"
+      font-weight="700" letter-spacing="4">BRIGHTFORM</text>
+<text x="565" y="310" fill="url(#studio)"
+      font-family="Arial, Helvetica, sans-serif" font-size="48"
+      font-weight="500" letter-spacing="25">STUDIO</text>
+</svg>
