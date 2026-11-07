@@ -96,16 +96,14 @@ if (currentYear) {
 const contactForm = document.getElementById("contact-form");
 
 
-// IMPORTANT:
-// Replace this with your actual WhatsApp number.
-// Use country code + number, without + or spaces.
+// Agency WhatsApp number: country code + number
 
 const WHATSAPP_NUMBER = "919316330109";
 
 
 if (contactForm) {
 
-    contactForm.addEventListener("submit", (event) => {
+    contactForm.addEventListener("submit", async (event) => {
 
         // Prevent normal form submission
 
@@ -221,13 +219,82 @@ Thank you!`;
             "noopener,noreferrer"
         );
 
+
+        /* =====================================
+           07. SUBMIT ENQUIRY TO NETLIFY
+           ===================================== */
+
+        const submitButton = contactForm.querySelector(
+            'button[type="submit"], input[type="submit"]'
+        );
+
+        if (submitButton) {
+
+            submitButton.disabled = true;
+
+        }
+
+
+        try {
+
+            const formData = new FormData(contactForm);
+
+            const response = await fetch("/", {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+
+                body: new URLSearchParams(formData).toString()
+
+            });
+
+
+            if (!response.ok) {
+
+                throw new Error("Netlify form submission failed.");
+
+            }
+
+
+            alert(
+                "Thank you! Your enquiry has been submitted successfully."
+            );
+
+            contactForm.reset();
+
+
+        } catch (error) {
+
+            console.error(
+                "Form submission error:",
+                error
+            );
+
+            alert(
+                "WhatsApp has opened, but we could not confirm that your enquiry was saved. Please try submitting again."
+            );
+
+
+        } finally {
+
+            if (submitButton) {
+
+                submitButton.disabled = false;
+
+            }
+
+        }
+
     });
 
 }
 
 
 /* =========================================
-   07. CONSOLE MESSAGE
+   08. CONSOLE MESSAGE
    ========================================= */
 
 console.log(

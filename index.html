@@ -896,7 +896,17 @@
                     </div>
 
 
-                    <form class="contact-form" id="contact-form">
+                    <form class="contact-form" id="contact-form" name="brightform-enquiries" method="POST"
+                        data-netlify="true" netlify-honeypot="bot-field">
+
+                        <input type="hidden" name="form-name" value="brightform-enquiries">
+
+                        <div hidden>
+                            <label>
+                                Don't fill this out:
+                                <input name="bot-field">
+                            </label>
+                        </div>
 
                         <div class="form-group">
 
